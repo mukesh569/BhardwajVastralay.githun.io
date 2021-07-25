@@ -41,7 +41,8 @@
                   </a>
               </div>
               <nav>
-                  <ul>
+              <button  class="menuControl"><i class="fas fa-bars"></i></button>
+                  <ul id="mymenu">
                       <li><a href="#">Home</a></li>
                       <li><a href="#">About</a></li>
                       <li><a href="#">Collection</a></li>
@@ -111,25 +112,19 @@
                             <img src="img/one.jpeg">
                             <div class="content">Item 1</div>
                         </div>
+                        
                         <div class="itemss">
-                            <img src="img/fifteen.jpeg">
-                            <div class="content">Item 2</div>
+                          <img src="img/four.jpeg">
+                          <div class="content">Item 7</div>
                         </div>
-                        <div class="itemss">
-                            <img src="img/six.jpeg">
-                            <div class="content">Item 3</div>
-                        </div>
+                       
                     </div>
                     <div class="row2">
                         <div class="itemss">
                             <img src="img/two.jpeg">
                             <div class="content">Item 4</div>
                         </div>
-                        <div class="itemss">
-                            <img src="img/seven.jpeg">
-                            <div class="content">Item 5</div>
-                        </div>
-                        <div class="itemss">
+                             <div class="itemss">
                           <img src="img/nine.jpeg">
                           <div class="content">Item 8</div>
                       </div>
@@ -145,8 +140,12 @@
                             <div class="content">Item 7</div>
                         </div>
                         <div class="itemss">
-                          <img src="img/four.jpeg">
-                          <div class="content">Item 7</div>
+                            <img src="img/fifteen.jpeg">
+                            <div class="content">Item 2</div>
+                        </div>
+                        <div class="itemss">
+                            <img src="img/seven.jpeg">
+                            <div class="content">Item 5</div>
                         </div>
                         
                     </div>
@@ -307,12 +306,12 @@ Near Water Tank, Narnaul-123001</span></p>
       <h3>Important links</h3>
           
           <div style=" width:50%; float: left; ">               
-              <a href="#">Photography</a>
-              <a href="#">Decoration</a>
+              <a href="#">About</a>
+              <a href="#">Collection</a>
           </div>
       <div style=" width:50%; float: left;">
-          <a href="#">Event</a>
-          <a href="#">Photo Gift</a>
+          <a href="#">Owner's Desk</a>
+          <a href="#">Contact Us</a>
           
       </div>     
       
@@ -321,7 +320,7 @@ Near Water Tank, Narnaul-123001</span></p>
       <h3>Follow US</h3>
       <ul>
           <li><a href="#" target="_daliEvent"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="#" target="_daliEvent"><i class="fab fa-youtube"></i></a></li>
+          
           <li><a href="#" target="_daliEvent"><i class="fab fa-instagram-square"></i></a></li>
       </ul>
   </div>
@@ -407,6 +406,13 @@ Near Water Tank, Narnaul-123001</span></p>
           $('.carousel').carousel({
               interval: 2000 //changes the speed
           })
+          </script>
+          <script type="text/javascript">
+              $(document).ready(function(){
+  $(".menuControl").click(function(){
+    $("#mymenu").toggle("slow");
+  });
+});
           </script>
 </body>
 </html>
