@@ -1,17 +1,12 @@
 *{ margin: 0; padding: 0; box-sizing: border-box;}
-/* @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-/* font-family: 'El Messiri'; */
-/* font-family: 'Lemonada', cursive !important; */
-/* font-family: 'STIX Two Math', serif; */
-html,body{ font-size: 62.5%;font-family: 'Philosopher' !important;}
+
+html,body{ font-size: 62.5%;font-family: 'Philosopher'; }
+/*#d8f5f2*/
 :root{
     --whiteColor :#ffffff;
     --whiteDual: #f7f7f7;
     --themeColor : #06332e;
-    --lightTheme: #d8f5f2;
+    --lightTheme: #ffffff;
     --theme-text-light: #674a07;
     --goldColor: #f8e07b;
     --btnColor: #bd9945;
@@ -31,11 +26,11 @@ html,body{ font-size: 62.5%;font-family: 'Philosopher' !important;}
 .top_r { width: 50%;  display: flex;  justify-content: flex-end;}
 .top_r ul{display:flex; list-style: none; align-items:center ; margin: 0;}
 .top_r ul li{ padding-left: 2rem;} 
-.top_r ul li a {  color:var(--theme-text-light);font-size: 1.5rem;}
+.top_r ul li a {  color:var(--theme-text-light);font-size: 1.5rem; text-transform: uppercase;}
 /*----------------------top  end----------------------------*/
 /*----------------------Header  start----------------------------*/
 .header-wrapper{ width: 100%; margin: auto; background:var(--themeColor); padding: 0 0rem; 
-display: flex;height: 10rem;}
+display: flex;height: 10rem;font-family: 'Dancing Script', cursive;}
 .logo-section {  width: 12%;  display: flex;align-items: center;}
 .logo-section img{ width:auto; height:10rem; }
 nav{ width: 88%; height: 100%;}
@@ -52,7 +47,7 @@ nav ul li a:after{ position: absolute;content: ''; width:0%;height: 3px;backgrou
 nav ul li a:hover{color:var(--goldColor); text-decoration: none;}
 nav ul li:last-child  a:after,nav ul li:last-child  a:before{ display: none; }
 .btn-quotes { border-radius:.5rem; padding: 2rem 1.5rem;color:var(--whiteDual);
-    background: var(--btnColor); font-size: 1.5rem;text-transform: capitalize;}
+    background: var(--btnColor); font-size: 1.5rem;text-transform: uppercase;}
 .btn-quotes:hover{ background: var(--btnhover); ; color: var(--whiteColor); text-decoration: none;}
 .addHeader{position: fixed; z-index: 9; top: 0; left: 0; box-shadow: 0px 0px 46px -2px var(--btnColor);}
 /*----------------------Header  end----------------------------*/
@@ -73,7 +68,8 @@ nav ul li:last-child  a:after,nav ul li:last-child  a:before{ display: none; }
 .carousel-caption  img { filter: drop-shadow(1px 3px 2px var(--themeColor));
     width: auto !important;    height: 14rem !important;}
 .carousel-caption h2 { font-size: 6rem; text-transform: uppercase;color: var(--goldColor);
-    font-weight: bold; text-shadow: 6px 4px 2px var(--themeColor); word-spacing: 2rem;letter-spacing: .8rem;}
+    font-weight: bold; text-shadow: 6px 4px 2px var(--themeColor); word-spacing: 2rem;
+    letter-spacing: .8rem;font-family: 'Dancing Script', cursive;}
 .carousel-control-next, .carousel-control-prev{z-index: 9;}
 /*----------------------Slider  end----------------------------*/
 /*----------------------all Collectio Home  start----------------------------*/
@@ -86,7 +82,7 @@ nav ul li:last-child  a:after,nav ul li:last-child  a:before{ display: none; }
 .service .heading{ width:100%; position:relative;}
 .service .heading  h1{ color:var(--themeColor);  text-align: center;
     text-transform: uppercase; font-size: 4rem; letter-spacing: .3rem; position:relative;
-    padding-bottom: 1rem; font-family: 'Dancing Script', cursive !important;}
+    padding-bottom: 1rem; font-family: 'Dancing Script', cursive;}
 .box-service{ width:100%; display: flex;}
 .box-service .box-size-service { width: 25%; display: flex; flex-direction: column;
         align-items: center; margin: 8rem 0 3rem; cursor: pointer; }
@@ -103,7 +99,7 @@ nav ul li:last-child  a:after,nav ul li:last-child  a:before{ display: none; }
 .slideshow-container .heading{ width:100%; position:relative;}
 .slideshow-container .heading  h1{ color: #f8e07b;  text-align: center;
     text-transform: uppercase; font-size: 4rem; letter-spacing: .3rem; position:relative;
-    padding-bottom: 1rem; font-family: 'Dancing Script', cursive !important;}
+    padding-bottom: 1rem;font-family: 'Dancing Script', cursive;}
 .mySlides {display: none;padding: 8rem 0 0;text-align: center;color: #fff;
     justify-content: center;flex-direction: column; align-items: center;}
 .mySlides img { width: 13rem; height: 13rem;border-radius: 50%;transition: all .2s; }
@@ -126,7 +122,7 @@ q {font-style: italic;}
 #clients .heading{ width:100%; position:relative;}
 #clients .heading  h1{ color: var(--themeColor);  text-align: center;
     text-transform: uppercase; font-size: 4rem; letter-spacing: .3rem; position:relative;
-    padding-bottom: 1rem; font-family: 'Dancing Script', cursive !important;}
+    padding-bottom: 1rem; font-family: 'Dancing Script', cursive;}
 #clients .clients-wrap { display: block;width: 95%; margin: 0 auto; overflow: hidden; }
 #clients .clients-wrap ul {display: block;list-style: none;position: relative;
     margin-left: auto;  margin-right: auto;  padding: 8rem 0 2rem;}
@@ -190,16 +186,16 @@ a.whatsappIconDiv img{ width: 100%; height: 100%; }
 .headdeco img{ height: 11rem; width:auto}
 .all-collection .heading  h1{ color: #f8e07b; text-align: center;
 text-transform: uppercase; font-size: 4rem; letter-spacing: .3rem; position:relative;
-padding-bottom: 1rem; font-family: 'Dancing Script', cursive !important;}
+padding-bottom: 1rem; font-family: 'Dancing Script', cursive;}
 
 .box-collection{ width:100%; position: relative; padding:8rem 0 2rem;   display: flex;}
 .box-collection .row1{ width:100%;}
 .box-collection .row1 .itemss { position: relative;width: 48%; overflow: hidden;
-    height: calc(100vh - 15rem);  float: left;  margin: 1%; border-radius: 1rem;}
-.box-collection .row1 .itemss img { width:100%; height: calc(100vh - 15rem); transition: all .2s;
+    height: calc(100vh - 10rem);  float: left;  margin: 1%; border-radius: 1rem;}
+.box-collection .row1 .itemss img { width:100%; height: calc(100vh - 1rem); transition: all .2s;
     cursor:pointer; position: relative;}
 .box-collection .row1 .itemss .content { position: absolute;width: 100%;
-        height:inherit; left: 0; top: 0; border: 1rem solid #fff;z-index: 2;transform: scale(.89);
+        height:100%; left: 0; top: 0; border: 1rem solid #fff;z-index: 2;transform: scale(.89);
         background: rgba(0,0,0,0.4); cursor: pointer;transition: all .3s; color: #fff;
         font-size: 6rem;  display: flex;align-items: center; justify-content: center;
         border-radius: 1rem; padding: 1rem;text-align: center;text-transform: capitalize; }
@@ -235,18 +231,20 @@ nav button{display: none;}
 /*------------------Collection Page End-----------------*/
 /*------------------custom-tailoring Page Start-----------------*/
 .custom-tailoring{ background: var(--lightTheme); }
+.custom-tailoring.all-collection .heading  h1{color:var(--themeColor);}
 .custom-tailoring .box-collection .row1 .itemss{ position: relative;width: 31%;overflow: hidden;
     height: auto;  float: left;  margin: 1%; border-radius: 1rem;}
  .custom-tailoring .box-collection .row1 .itemss .content{ height:100%;font-size: 4rem; }
 .custom-tailoring .box-collection .row1 .itemss:hover  .content {transform: translateY(0%);
-    height: auto!important;  bottom: 0; top: auto; background: var(--themeColor);
+    height: auto !important;  bottom: 0; top: auto; background: var(--themeColor);
     color: var(--lightTheme);   border-color:  var(--themeColor);    font-size: 2.5rem;}
 /*------------------custom-tailoring Page End-----------------*/
 /*------------------owner Page End-----------------*/
 .owner-desk{ background: var(--lightTheme); }
+.owner-desk.all-collection .heading  h1{color:var(--themeColor);}
 .owner-desk .box-collection .row1{ width:100%;}
 .owner-desk .box-collection .row1 .itemss{ width: 46%; height: auto; margin: 2%;}
-.box-collection .row1 .itemss img { width: 100%; height:calc(100vh - 20rem);transition: all .2s;
+.owner-desk .box-collection .row1 .itemss img { width: 100%; height:calc(100vh - 20rem);transition: all .2s;
     cursor: pointer;   position: relative;}
 /*------------------owner Page End-----------------*/
 /*------------------contact Page Start-----------------*/
@@ -322,15 +320,15 @@ nav button{display: none;}
 /*-------------------Responsive query start-------------------------*/
 
 @media only screen and (max-width: 1250px){
-html, body {  font-size: 48.5% !important; font-family: 'Philosopher' !important;}
+html, body {  font-size: 48.5% !important; }
 .top_r ul li a {  font-size: 2rem;}
 }
 @media only screen and (max-width: 1000px){
-html, body {  font-size: 40.5% !important; font-family: 'Philosopher' !important;}
+html, body {  font-size: 40.5% !important;}
 }
 /*--------------tab query Start-------------------------*/
 @media only screen and (max-width: 860px){
-html, body {  font-size: 45.5% !important; font-family: 'Philosopher' !important;}
+html, body {  font-size: 45.5% !important;}
 .top_l ul li a i {  font-size: 2rem; line-height: 4rem;}
 .top_l ul li a span {  font-size: 2rem;}
 nav ul{display: none;}
